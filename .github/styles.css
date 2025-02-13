@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #4D6058;
+  color: #fff;
+  padding: 20px;
+  width: 300px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h3 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Contenedor principal */
+.container {
+  margin-left: 320px;
+  padding: 20px;
+  width: calc(100% - 320px);
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Secciones */
+.section {
+  margin: 20px 0;
+  border-bottom: 2px solid #4D6058;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #4D6058;
+}
+
+
+/* Círculos decorativos */
+.circle-large {
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background: none;
+  position: relative;
+}
+
+.circle-small {
+  width: 70px;
+  height: 70px;
+  background-color: #4D6058;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-outline {
+  width: 117px;
+  height: 90px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+}
